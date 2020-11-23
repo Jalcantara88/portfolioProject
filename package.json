@@ -1,0 +1,30 @@
+{
+  "name": "portfoliowebsite",
+  "version": "1.0.0",
+  "description": "NuCamp Portfolio Project by Julio Alcantara",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jalcantara88/portfolioProject.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "npm",
+    "node",
+    "portfolio"
+  ],
+  "author": "Julio Alcantara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jalcantara88/portfolioProject/issues"
+  },
+  "homepage": "https://github.com/Jalcantara88/portfolioProject#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper": "^1.0.1"
+  }
+}
