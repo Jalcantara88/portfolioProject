@@ -4,6 +4,7 @@
   "description": "NuCamp Portfolio Project by Julio Alcantara",
   "main": "index.js",
   "scripts": {
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
