@@ -14,7 +14,8 @@
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
     
         <!--GOOGLE FONT-->
-        <link rel="stylesheet" href="https://fonts.google.com/specimen/Amatic+SC" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"> 
 
         <!--ADDITIONAL CSS-->
         <link rel="stylesheet" href="css/styles.css" />
@@ -30,10 +31,10 @@
     <body>
 
         <!--SOCIAL BAR-->
-        <header class="jumbotron jumbotron-fluid bg-info p-1 p-md-2 my-0">
+        <header class="jumbotron jumbotron-fluid bg-info p-1 p-md-2 my-0" id="pageStart">
             <div class="container">
                 <div class="row">
-                    <div class="col-7 col-md-6 col-lg-3 mx-auto">
+                    <div class="col-7 col-md-6 col-lg-3 mx-auto p-0">
                         <!--SOCIAL LINKS-->
                         <div class="row">
                             <a class="col-3" href="https://www.facebook.com"><img src="/assets/img/icons/social/facebook.svg"/></a>
@@ -47,17 +48,17 @@
         </header>
 
         <!--HERO CAROUSEL JUMBOTRON HOLDER-->
-        <div class="jumbotron jumbotron-fluid py-0">
+        <div class="jumbotron jumbotron-fluid py-0 my-0">
             
 
             <!--START OF CAROUSEL-->
-            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+            <div id="heroCarousel" style="max-width: 1080px;" class="carousel slide mx-auto" data-ride="carousel">
                 
                 <!--CAROUSEL INDICATORS-->
                 <ol class="carousel-indicators">
-                    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#homeCarousel" data-slide-to="1"></li>
-                    <li data-target="#homeCarousel" data-slide-to="2"></li>
+                    <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#heroCarousel" data-slide-to="1"></li>
+                    <li data-target="#heroCarousel" data-slide-to="2"></li>
                 </ol>
 
                 <!--CAROUSEL INNER-->
@@ -65,7 +66,7 @@
 
                     <!--SLIDE ONE-->
                     <div class="carousel-item active">
-                        <img src="assets/img/slides/slide1.png" class="d-block w-100" alt="SlideOne"/>
+                        <img src="assets/img/slides/slide1.png" class="d-block w-100 heroImage" alt="SlideOne"/>
                         <div class="carousel-caption">
                             <div class="card">
                                 <h2 class="card-header bg-info">Slide Title One</h2>
@@ -78,49 +79,103 @@
 
                     <!--SLIDE TWO-->
                     <div class="carousel-item">
-                        <img src="assets/img/slides/slide2.png" class="d-block w-100" alt="SlideTwo"/>
+                        <img src="assets/img/slides/slide2.png" class="d-block w-100 heroImage" alt="SlideTwo"/>
                         <div class="carousel-caption">
-                            <h2>Slide Title Two</h2>
-                            <p class="d-none d-sm-block">
-                                Slide caption Two. Lorem Ipsum.
-                            </p>
+                            <div class="card">
+                                <h2 class="card-header bg-info">Slide Title Two</h2>
+                                <p class="d-none d-sm-block card-body text-secondary">
+                                    Slide caption two. Lorem Ipsum.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     <!--SLIDE THREE-->
                     <div class="carousel-item">
-                        <img src="assets/img/slides/slide3.png" class="d-block w-100" alt="SlideThree"/>
+                        <img src="assets/img/slides/slide3.png" class="d-block w-100 heroImage" alt="SlideThree"/>
                         <div class="carousel-caption">
-                            <h2>Slide Title Three</h2>
-                            <p class="d-none d-sm-block">
-                                Slide caption Three. Lorem Ipsum.
-                            </p>
+                            <div class="card">
+                                <h2 class="card-header bg-info">Slide Title Three</h2>
+                                <p class="d-none d-sm-block card-body text-secondary">
+                                    Slide caption three. Lorem Ipsum.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
                 <!--CAROUSEL CONTROLS-->
-                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                     <span class="sr-only">Next</span>
                 </a>
-                
+
             </div>
                     
         </div>
 
+        <!--NAVBARMAIN HOLDER-->
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top bg-primary">
 
+            <div class="container">
+
+                <!--NAVBARMAIN DISPLAY TOGGLE BUTTON-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--NAVBARMAIN ELEMENTS-->
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#pageStart"><h1>feature</h1></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pageStart"><h1>about</h1></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pageStart"><h1>portfolio</h1></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pageStart"><h1>contact</h1></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--FOOTER-->
+        <footer>
+            <div class="col-12 text-center bg-info p-1">
+                <a href="#pageStart" class="text-white"><h2>BACK TO TOP</h2></a>
+            </div>
+            <div class="">
+                <div class="row py-3">
+                    <div class="col-12 col-md-4 col-lg-3 mx-auto p-0">
+                        <div class="row">
+                            <a class="col-3" href="https://www.facebook.com"><img src="/assets/img/icons/social/facebook.svg"/></a>
+                            <a class="col-3" href="https://www.dribbble.com"><img src="/assets/img/icons/social/dribbble.svg"/></a>
+                            <a class="col-3" href="https://www.linkedin.com"><img src="/assets/img/icons/social/linkedin.svg"/></a>
+                            <a class="col-3" href="https://www.youtube.com"><img src="/assets/img/icons/social/youtube.svg"/></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row bg-secondary text-white">
+                    <div class="col-12 col-md-4 mx-auto text-center my-3">
+                        <a role="button" class="btn btn-link text-white" href="tel:+2065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
+                        <a role="button" class="btn btn-link" href="mailto:julio@deadheadstudio.com"></a><i class="fa fa-envelope-o"></i> julio@deadheadstudio.com
+                    </div>
+                </div>
+        </footer>
 
 
 
     </body>
-    <!--FOOTER-->
-    <footer>
+    
+ 
 
-    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script><!--for pop ups tooltips and dropdowns-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+    
 </html>
