@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"> 
 
         <!--ADDITIONAL CSS-->
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/style.css" />
 
         <!--FONT AWESOME-->
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
@@ -34,7 +34,7 @@
         <header class="jumbotron jumbotron-fluid bg-info p-1 p-md-2 my-0" id="pageStart">
             <div class="container">
                 <div class="row">
-                    <div class="col-7 col-md-6 col-lg-3 mx-auto p-0">
+                    <div class="col-7 col-md-5 col-lg-3 mx-auto p-0">
                         <!--SOCIAL LINKS-->
                         <div class="row">
                             <a class="col-3" href="https://www.facebook.com"><img src="/assets/img/icons/social/facebook.svg"/></a>
@@ -55,7 +55,7 @@
             <div id="heroCarousel" style="max-width: 1080px;" class="carousel slide mx-auto" data-ride="carousel">
                 
                 <!--CAROUSEL INDICATORS-->
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators mainIndicators">
                     <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#heroCarousel" data-slide-to="1"></li>
                     <li data-target="#heroCarousel" data-slide-to="2"></li>
@@ -68,7 +68,7 @@
                     <div class="carousel-item active">
                         <img src="assets/img/slides/slide1.png" class="d-block w-100 heroImage" alt="SlideOne"/>
                         <div class="carousel-caption">
-                            <div class="card">
+                            <div class="card mb-3">
                                 <h2 class="card-header bg-info">Slide Title One</h2>
                                 <p class="d-none d-sm-block card-body text-secondary">
                                     Slide caption one. Lorem Ipsum.
@@ -81,7 +81,7 @@
                     <div class="carousel-item">
                         <img src="assets/img/slides/slide2.png" class="d-block w-100 heroImage" alt="SlideTwo"/>
                         <div class="carousel-caption">
-                            <div class="card">
+                            <div class="card mb-3">
                                 <h2 class="card-header bg-info">Slide Title Two</h2>
                                 <p class="d-none d-sm-block card-body text-secondary">
                                     Slide caption two. Lorem Ipsum.
@@ -94,7 +94,7 @@
                     <div class="carousel-item">
                         <img src="assets/img/slides/slide3.png" class="d-block w-100 heroImage" alt="SlideThree"/>
                         <div class="carousel-caption">
-                            <div class="card">
+                            <div class="card mb-3">
                                 <h2 class="card-header bg-info">Slide Title Three</h2>
                                 <p class="d-none d-sm-block card-body text-secondary">
                                     Slide caption three. Lorem Ipsum.
@@ -120,7 +120,7 @@
         </div>
 
         <!--NAVBARMAIN HOLDER-->
-        <nav class="navbar navbar-expand-sm navbar-dark sticky-top bg-primary">
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top bg-info py-0 mainNav">
 
             <div class="container">
 
@@ -132,14 +132,69 @@
                 <!--NAVBARMAIN ELEMENTS-->
                 <div class="collapse navbar-collapse" id="navbarMain">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#pageStart"><h1>feature</h1></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#pageStart"><h1>about</h1></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#pageStart"><h1>portfolio</h1></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#pageStart"><h1>contact</h1></a></li>
+                        <li class="nav-item active align-self-center navbarMainLink tex-center"><a class="nav-link" href="#pageStart"><h1>feature</h1></a></li>
+                        <li class="nav-item align-self-center navbarMainLink text-center"><a class="nav-link" href="#about"><h1>about</h1></a></li>
+                        <li class="nav-item">
+                            <div class="logoHolder">
+                                <img class="img-fluid logo" src="assets/img/logo/dhLogo.svg"/>
+                            </div>
+                        </li>
+                        <li class="nav-item align-self-center navbarMainLink text-center"><a class="nav-link" href="#pageStart"><h1>Gallery</h1></a></li>
+                        <li class="nav-item align-self-center navbarMainLink text-center"><a class="nav-link" href="#pageStart"><h1>contact</h1></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <!--ABOUT SECTION - PARALLAX IMAGE SECTION-->
+        <div class="jumbotron paral paralsec mb-0" id="about">
+            <!--ABOUT INTRO-->
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-10 col-md-6 col-lg-4 mx-auto">
+                        <img class="profileImg img-fluid"  src="assets/img/profile/profilePic.png"/>    
+                    </div>  
+                    <div class="col-12 col-md-6 col-lg-8 px-3">
+                        <div class="row text-white">
+                            <div class="col text-center">
+                                <h1 class="lgFont">Julio Alcantara</h1>
+                            </div>
+                            
+                        </div>
+                        <div class="row text-info">
+                            <div class="col text-center">
+                                <h2 class="mdFont">Designer / Developer</h2>
+                            </div>
+                            
+                        </div>
+                        <div class="row missionStatement bg-info py-3 mt-2 mt-lg-5">
+                            <div class="col text-center">
+                                <h2 class="text-white mdFont">"There is Beauty in Death"</h2>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <!--SKILLS-->
+            <div class="" id="skills">
+
+            </div>
+            
+            
+        </div>
+
+        <!--PORTFOLIO SECTION-->
+        <div class="" id="portfolio">
+
+        </div>
+
+        <!--CONTACT SECTION-->
+        <div class="" id="contact">
+            
+        </div>
+
 
         <!--FOOTER-->
         <footer>
@@ -148,7 +203,7 @@
             </div>
             <div class="">
                 <div class="row py-3">
-                    <div class="col-12 col-md-4 col-lg-3 mx-auto p-0">
+                    <div class="col-12 col-md-4 col-lg-2 mx-auto p-0">
                         <div class="row">
                             <a class="col-3" href="https://www.facebook.com"><img src="/assets/img/icons/social/facebook.svg"/></a>
                             <a class="col-3" href="https://www.dribbble.com"><img src="/assets/img/icons/social/dribbble.svg"/></a>

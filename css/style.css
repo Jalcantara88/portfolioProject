@@ -5,3 +5,59 @@
 h1, h2, h3{
     font-family: "Amatic SC", cursive;
 }
+
+.lgFont{
+    font-size: 5em;
+}
+
+.mdFont{
+    font-size: 3em;
+}
+
+.logoHolder{
+    border-radius: 100%; 
+    background-color: white;
+    padding: 3px;
+
+}
+
+.logo{
+    max-height: 130px;
+
+    
+}
+
+.profileImg{
+    max-height: 400px;
+    background-color: white;
+    border-radius: 100%;
+    padding: 3px;
+}
+
+.missionStatement{
+    border-radius: 30px; 
+}
+
+.mainIndicators{
+    margin-bottom: 30px;
+}
+
+.mainNav{
+    height: 80px;
+}
+
+.navbarMainLink{
+    width: 100px;
+    background-color: grey, 0.5;
+}
+
+.paralsec {
+    background-image: url("/assets/img/parallax/parallax2.jpg.png");
+    }
+
+.paral {
+    min-height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    }
