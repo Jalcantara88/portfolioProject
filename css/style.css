@@ -21,6 +21,42 @@ h1, h2, h3{
 
 }
 
+.portfolioThumb{
+    border-radius: 10px;
+}
+
+.badgeHolder{
+    border: 5px solid purple;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 100%;
+}
+
+.badge{
+    height: 160px;
+
+}
+
+.portfolioHolder{
+    background-image: linear-gradient(to top, #ff6f36, #ffba13)
+}
+
+input.form-control::placeholder {
+    opacity: .5;
+}
+
+textarea.form-control::placeholder {
+    opacity: .5;
+}
+
+.contactFormHolder{
+    border-radius: 30px;
+}
+
+.contactBG{
+    background-image: linear-gradient(to right, pink, lightblue)
+}
+
 .logo{
     max-height: 130px;
 
