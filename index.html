@@ -26,6 +26,7 @@
         <!--PAGE TITLE-->
         <title>DeadHead Studio: There is Beauty in Death</title>
 
+
     </head>
     <!--BODY-->
     <body>
@@ -195,7 +196,7 @@
                 <div class="row justify-content-center">
                     
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="badgeHolder p-4">
+                        <div class="badgeHolder p-4 ">
                             <img class="img-fluid" src="assets/img/badges/html-5.svg"/>
                         </div>
                     </div>
@@ -210,12 +211,12 @@
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="badgeHolder pt-3 badge">
-                            <img class="img-fluid" src="assets/img/badges/bootstrap.png"/>
+                        <div class="badgeHolder pt-4">
+                            <img class="img-fluid " src="assets/img/badges/bootstrap.png"/>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
-                        <div class="badgeHolder pt-4 badge">
+                        <div class="badgeHolder pt-4">
                             <img class="img-fluid" src="assets/img/badges/react.png"/>
                         </div>
                     </div> 
@@ -265,14 +266,16 @@
                     
                     
                 </div>
+
+                <!--MODELING & ANIMATION-->
                 <div class="row justify-content-center pt-4">
                     <h2 class=" smFont text-muted">3d modeling & animation</h2>
                 </div>
                 <div class="row justify-content-center mb-5">
                     
                             <div class="col-6 col-md-4 col-lg-2">
-                                <div class="badgeHolder badge">
-                                    <img class="img-fluid" src="assets/img/badges/blender.png"/>
+                                <div class="badgeHolder pt-3 ">
+                                    <img class="img-fluid mb-2" src="assets/img/badges/blender.png"/>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 col-lg-2">
@@ -305,19 +308,14 @@
                 </div>
                 <div class="row justify-content-center">
                     
+                            
                             <div class="col-12 col-md-6 col-lg-4 my-3">
-                                
                                 <a role="button" class="imgThumb">
-                                    <div class="view overlay">
-                                        <img class="img-fluid" src="assets/img/slides/slide1.png" alt="title"/>
-                                        <div class="mask flex-center rgba-red-strong">
-                                            
-                                        </div>
-                                    </div>
+                                    <img class="img-thumbnail px-2 pt-2 py-4 portfolioThumb" src="assets/img/slides/slide1.png" alt="title"/>
                                 </a>
-                            </div>
+                            </div>        
                             <div class="col-12 col-md-6 col-lg-4 my-3">
-                                <a role="button" data-toggle="modal" data-target="imgModal" class="imgThumb">
+                                <a role="button" href="assets/img/slides/slide1.png" class="imgThumb">
                                     <img class="img-thumbnail px-2 pt-2 py-4 portfolioThumb" src="assets/img/slides/slide1.png" alt="title"/>
                                 </a>
                             </div>
@@ -362,22 +360,28 @@
         </div>
 
         <!--MODAL EXAMPLE FOR PORTFOLIO-->
-        <div id="imgModal" class="modal fade">
-            <div class="modal-dialog">
-                
+        <div id="imgModal" class="modal fade" role="dialog">
+            <div class="container-fluid modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h3>Image FullSize</h3>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        
-                        <img class="img-fluid" src="assets/img/slides/slide1.png"/>
-
-                                
-                    </div>
+                    <div class="row justify-content-center">
+                    
+                        <div class="col-12 modal-header">
+                            <h3>Image FullSize</h3>
+                            <button id="closeModal" class="close" data-dismiss="modal"  type="button" >&times;</button>
+                        </div>
+                        <div class="col-12 modal-body ">
+                            
+                            <img class="img-fluid mx-auto" src="assets/img/slides/slide1.png"/>
+                                    
+                        </div>
+                    
                 </div>
+                </div>
+                
+                
             </div>
+                    
+               
         </div>
 
         
@@ -497,15 +501,16 @@
         </div>
 
         <!--MODAL FOR CONTACT SUBMIT-->
-        <div class="modal fade" role="dialog">
+        <div class="modal fade" role="dialog" id="contactModal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h3>Image FullSize</h3>
+                    <div class="modal-header bg-info text-white">
+                        <h3 class="ml-auto">MESSAGE SUBMITTED</h3>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <div class="modal-body">
-    
+                    <div class="modal-body text-center">
+                        <h1>Thank You for your Message!</h1>
+                        <p>I will review it and get back to you as soon as possible!</p>
                     </div>
                 </div>
                 
@@ -552,6 +557,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script><!--for pop ups tooltips and dropdowns-->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    
     <script src="/js/scripts.js"></script>
         
     
