@@ -100,3 +100,11 @@ textarea.form-control::placeholder {
     background-position: 50% 50%;
     }
 
+.modal-content {
+    width: 1000px;
+    
+}
+
+.modal-body {
+    padding: 0px;
+}

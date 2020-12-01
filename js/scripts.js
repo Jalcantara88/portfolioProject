@@ -1,7 +1,5 @@
 $(function() {
-    $(".imgThumb").click(function() {
-        $("#imgModal").modal("show");
-    });
+    $('[data-toggle="tooltip"]').tooltip()
 
     $("#contactButton").click(function() {
         $("#contactModal").modal("show");
