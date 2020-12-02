@@ -108,3 +108,32 @@ textarea.form-control::placeholder {
 .modal-body {
     padding: 0px;
 }
+
+.bannerLink {
+    color: white;
+    
+    
+}
+
+#bannerImg1 {
+    background-image: url("/assets/img/slides/slide1.png");
+}
+#bannerImg2 {
+    background-image: url("/assets/img/slides/slide2.png");
+}
+#bannerImg3 {
+    background-image: url("/assets/img/slides/slide3.png");
+}
+#bannerImg4 {
+    background-image: url("/assets/img/slides/slide4.png");
+}
+#bannerImg5 {
+    background-image: url("/assets/img/slides/slide5.png");
+}
+#bannerImg6 {
+    background-image: url("/assets/img/slides/slide6.png");
+}
+
+a {
+    text-decoration: none;
+}
